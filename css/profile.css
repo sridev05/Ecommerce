@@ -1,0 +1,118 @@
+.profile-container {
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* height:100%; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h3 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.info-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.info-group label {
+    width: 120px;
+    margin-top: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.info-group p {
+    width: 290px;
+    margin: 0;
+    color: #333;
+}
+
+.edit-btn, .add-address-btn, .view-all-btn {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover, .add-address-btn:hover, .view-all-btn:hover {
+    background-color: #1a5fd4;
+}
+
+.view-all-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.address-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.address-card h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.address-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.orders-list {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-group {
+        flex-direction: column;
+    }
+
+    .info-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

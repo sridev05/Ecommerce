@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - DevMart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 DevMart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="https://th.bing.com/th/id/OIP.prdd5O2Hrd2e0oj2ze1ZYAHaE3?w=308&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Profile Picture">
+            </div>
+            <h2>Welcome, <span id="user-name"></span></h2>
+        </div>
+
+        <div class="profile-details">
+            <div class="profile-section">
+                <h3>Personal Information</h3>
+                <div class="info-group">
+                    <label>Email:</label>
+                    <p id="user-email">john@example.com</p>
+                </div>
+                <div class="info-group">
+                    <label>Member Since:</label>
+                    <p id="join-date">January 2024</p>
+                </div>
+                <button class="edit-btn">Edit Profile</button>
+            </div>
+
+            <div class="profile-section">
+                <h3>Recent Orders</h3>
+                <div class="orders-list">
+                    <!-- Orders will be populated dynamically -->
+                </div>
+                <a href="orders.html" class="view-all-btn">View All Orders</a>
+            </div>
+
+            <div class="profile-section">
+                <h3>Saved Addresses</h3>
+                <div class="address-list">
+                    <div class="address-card">
+                        <h4>Home</h4>
+                        <p>123 Main Street, Apartment 4B</p>
+                        <p>New York, NY 10001</p>
+                    </div>
+                    <button class="add-address-btn">Add New Address</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+    <script src="js/script.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/auth.js"></script>
+</html>

@@ -1,0 +1,93 @@
+/* Form validation styles */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+}
+
+.form-group input.success {
+    border-color: #28a745;
+}
+
+.form-group input.error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 5px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.strength-meter {
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.weak { background-color: #dc3545; width: 33.33%; }
+.medium { background-color: #ffc107; width: 66.66%; }
+.strong { background-color: #28a745; width: 100%; }
+
+/* Form submit button */
+.form-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #1a5fd4;
+}
+
+.form-submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Loading spinner for form submission */
+.spinner {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #2575fc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
